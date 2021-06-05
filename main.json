@@ -1,6 +1,6 @@
 {
     "sponsor": "http://onemboaran.com/afu.php?zoneid=2795394",
-    "img": "https://cdn.jsdelivr.net/gh/zFont/images/",
+    "img": "",
     "ss_font": "https://github.com/KhunHtetzNaing/SS_zFont/raw/master/apk/",
     "remove_ads": true,
     "mono": false,
@@ -79,7 +79,7 @@
     "lang": [
       {
         "name": "Arabic",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/arabic.json"
+        "url": "data/arabic.json"
       },
       {
         "name": "Color",
@@ -87,15 +87,15 @@
       },
       {
         "name": "Chakma",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/chakma.json"
+        "url": "data/chakma.json"
       },
       {
         "name": "Chinese",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/chinese.json"
+        "url": "data/chinese.json"
       },
       {
         "name": "English",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/english.json"
+        "url": "data/english.json"
       },
       {
         "name": "Emoji",
@@ -103,63 +103,63 @@
       },
       {
         "name": "KAREN (Leke script) 🔥",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/KAREN_Leke_script.json"
+        "url": "data/KAREN_Leke_script.json"
       },
       {
         "name": "Khmer",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/khmer.json"
+        "url": "data/khmer.json"
       },
       {
         "name": "Kurdish 🔥",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/kurdish.json"
+        "url": "data/kurdish.json"
       },
       {
         "name": "Lao",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/lao.json"
+        "url": "data/lao.json"
       },
       {
         "name": "Myanmar",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/myanmar.json"
+        "url": "data/myanmar.json"
       },
       {
         "name": "PaOh",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/paoh.json"
+        "url": "data/paoh.json"
       },
       {
         "name": "Russian",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/russian.json"
+        "url": "data/russian.json"
       },
       {
         "name": "Shan",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/shan.json"
+        "url": "data/shan.json"
       },
       {
         "name": "Tai Tham",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/tai_tham.json"
+        "url": "data/tai_tham.json"
       },
       {
         "name": "Thai",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/thai.json"
+        "url": "data/thai.json"
       },
       {
         "name": "Vietnamese",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/vietnamese.json"
+        "url": "data/vietnamese.json"
       },
       {
         "name": "Urdu",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/urdu.json"
+        "url": "data/urdu.json"
       },
       {
         "name": "Bengali",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/bengali.json"
+        "url": "data/bengali.json"
       },
       {
         "name": "Ukrainian",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/ukrainian.json"
+        "url": "data/ukrainian.json"
       },
       {
         "name": "Korean",
-        "url": "https://cdn.jsdelivr.net/gh/zFont/main/data/korean.json"
+        "url": "data/korean.json"
       }
     ],
     "oppo_fonts": [
@@ -186,25 +186,25 @@
     ],
     "featured": [
       {
-        "preview": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Preview/8H1rqGh.jpeg",
+        "preview": "Featured/Preview/8H1rqGh.jpeg",
         "a": "RickyBush_",
-        "thumbnail": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Thumb/cFmy5Qp.png",
+        "thumbnail": "Featured/Thumb/cFmy5Qp.png",
         "size": "25.2 MB",
         "cat": "Emoji",
         "title": "iOS_14.5",
         "url": "https://github.com/KhunHtetzNaing/zFont_Fonts/raw/master/Fonts/Emoji/iOS_14.5_FIXED.ttf"
       },
       {
-        "preview": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Preview/4P6Ht9u.png",
-        "thumbnail": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Thumb/Uwt53QS.png",
+        "preview": "Featured/Preview/4P6Ht9u.png",
+        "thumbnail": "Featured/Thumb/Uwt53QS.png",
         "size": "9.61 MB",
         "cat": "Emoji",
         "title": "Android_12_UNRELEASED",
         "url": "https://github.com/KhunHtetzNaing/zFont_Fonts/raw/master/Fonts/Emoji/Android_12_UNRELEASED.ttf"
       },
       {
-        "preview": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Preview/PjemQwR.png",
-        "thumbnail": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Thumb/zYune0b.png",
+        "preview": "Featured/Preview/PjemQwR.png",
+        "thumbnail": "Featured/Thumb/zYune0b.png",
         "size": "967 KB",
         "web": false,
         "cat": "Color",
@@ -212,8 +212,8 @@
         "url": "https://github.com/KhunHtetzNaing/zFont_Fonts/raw/master/Fonts/Color/Yggdrassil_color.ttf"
       },
       {
-        "preview": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Preview/m1jTU7j.png",
-        "thumbnail": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Thumb/Dpmxveu.png",
+        "preview": "Featured/Preview/m1jTU7j.png",
+        "thumbnail": "Featured/Thumb/Dpmxveu.png",
         "size": "162 KB",
         "web": false,
         "cat": "Cool",
@@ -221,8 +221,8 @@
         "url": "https://github.com/KhunHtetzNaing/zFont_Fonts/raw/master/Fonts/Cool/MasterPan.ttf"
       },
       {
-        "preview": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Preview/hwPQMCl.jpeg",
-        "thumbnail": "https://cdn.jsdelivr.net/gh/zFont/images/Featured/Thumb/cHVHV9Y.png",
+        "preview": "Featured/Preview/hwPQMCl.jpeg",
+        "thumbnail": "Featured/Thumb/cHVHV9Y.png",
         "size": "181 KB",
         "cat": "Myanmar",
         "title": "SanFransisco",
