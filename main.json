@@ -18,7 +18,7 @@
     "fb_interstitial": "736026427007327_736026850340618",
     "rewarded": "ca-app-pub-8938536730349592/9902220223",
     "admob": true,
-    "font": "https://cdn.jsdelivr.net/gh/KhunHtetzNaing/zFont_Fonts",
+    "font": "https://github.com/KhunHtetzNaing/zFont_Fonts/raw/master",
     "rooted": [
       {
         "Myanmar": [
