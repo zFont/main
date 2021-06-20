@@ -131,6 +131,10 @@
         "url": "data/russian.json"
       },
       {
+        "name": "Rohingya",
+        "url": "data/rohingya.json"
+      },
+      {
         "name": "Shan",
         "url": "data/shan.json"
       },
