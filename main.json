@@ -3609,6 +3609,14 @@
   ],
   "myanmar": [
     {
+      "unicode": true,
+      "in": true,
+      "n": "ဦးမိုးလက်ရေး",
+      "u": "/Fonts/Language/Myanmar/Unicode/ဦးမိုးလက်ရေး.ttf",
+      "s": "43 KB",
+      "t": "j9dLGb2.png"
+    },
+    {
       "a": "YG",
       "s": "243 KB",
       "t": "Myanmar/cxnJUMs.png",
