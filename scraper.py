@@ -1,3 +1,4 @@
+import gzip
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -83,6 +84,22 @@ def save_json(data, filename):
         print(f"[ERROR] Failed to save data to {filename}: {e}")
 
 
+def compress_json(json_data):
+    json_string = json.dumps(json_data)
+    json_bytes = json_string.encode('utf-8')
+    return gzip.compress(json_bytes)
+
+def save_full(data, filename):
+    try:
+        with open(filename, 'wb') as f:
+            f.write(compress_json(data))
+        print(f"[INFO] Successfully saved data to {filename}")
+    except Exception as e:
+        print(f"[ERROR] Failed to save data to {filename}: {e}")
+
+def get_file_path(name):
+    return os.path.join(OUT_DIR, name)
+
 def main():
     print("[INFO] Starting scraping process.")
     res = requests.get(BLOG_URL)
@@ -95,22 +112,25 @@ def main():
     labels = parse_labels(soup.find(id="z_labels"))
 
     print("[INFO] Collecting all posts.")
+
+    full = {"Slider": slider}
+
     for label in labels:
         items = collect_by_label(label)
-        filename = os.path.join(OUT_DIR, f"{label}.json")
 
+        full[label] = items
         if label == "Featured":
             # Remove this lable from labels, we dont need to save in json
             tmp_labels = dict(labels)
             del tmp_labels[label]
             main_json = {"featured": items, "categories": tmp_labels, "slider": slider}
-            save_json(main_json, os.path.join(OUT_DIR, "main.json"))
+            save_json(main_json, get_file_path("main.json"))
         else:
-            save_json(items, filename)
+            save_json(items, get_file_path(f"{label}.json"))
+
+    save_full(full,get_file_path("full.json"))
 
     print("[INFO] Scraping process completed.")
 
-
 if __name__ == '__main__':
     main()
-
