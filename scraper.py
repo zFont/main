@@ -117,7 +117,7 @@ def save_full(data, filename):
             # Add the category and its items to the output
             out.append({"name": category, "items": new_list})
 
-        with open(filename, 'wb') as f:
+        with open(filename, 'w') as f:
             json.dump(out, f)
         print(f"[INFO] Successfully saved data to {filename}")
     except Exception as e:
