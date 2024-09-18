@@ -91,8 +91,41 @@ def compress_json(json_data):
 
 def save_full(data, filename):
     try:
+        # Initialize an empty list to store the output
+        out = []
+        # Loop through each category in the JSON data
+        for category, item_list in data.items():
+            new_list = []
+            # Loop through each item in the category
+            for item in item_list:
+                # Extract the necessary fields, using alternate keys if needed
+                title = item.get('title') or item.get('n')
+                size = item.get('size') or item.get('s')
+                url = item.get('url') or item.get('u')
+                thumbnail = item.get('thumbnail') or item.get('t')
+                preview = item.get('preview') or item.get('p')
+                author_name = item.get('a')
+                author_url = item.get('a_l')
+                
+                # Create a new item with the required fields
+                new_item = {"n": title, "s": size, "u": url, "t": thumbnail}
+                
+                # Add optional fields if they exist
+                if preview:
+                    new_item["p"] = preview
+                if author_name:
+                    new_item["a"] = author_name
+                if author_url:
+                    new_item["a_l"] = author_url
+                
+                # Add the new item to the list
+                new_list.append(new_item)
+    
+            # Add the category and its items to the output
+            out.append({"name": category, "items": new_list})
+
         with open(filename, 'wb') as f:
-            f.write(compress_json(data))
+            f.write(compress_json(out))
         print(f"[INFO] Successfully saved data to {filename}")
     except Exception as e:
         print(f"[ERROR] Failed to save data to {filename}: {e}")
