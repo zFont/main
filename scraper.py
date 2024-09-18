@@ -1,4 +1,3 @@
-import gzip
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -83,12 +82,6 @@ def save_json(data, filename):
     except Exception as e:
         print(f"[ERROR] Failed to save data to {filename}: {e}")
 
-
-def compress_json(json_data):
-    json_string = json.dumps(json_data)
-    json_bytes = json_string.encode('utf-8')
-    return gzip.compress(json_bytes)
-
 def save_full(data, filename):
     try:
         # Initialize an empty list to store the output
@@ -125,7 +118,7 @@ def save_full(data, filename):
             out.append({"name": category, "items": new_list})
 
         with open(filename, 'wb') as f:
-            f.write(compress_json(out))
+            json.dump(data, f)
         print(f"[INFO] Successfully saved data to {filename}")
     except Exception as e:
         print(f"[ERROR] Failed to save data to {filename}: {e}")
