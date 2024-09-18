@@ -101,8 +101,9 @@ def main():
 
         if label == "Featured":
             # Remove this lable from labels, we dont need to save in json
-            del labels[label]
-            main_json = {"featured": items, "categories": labels, "slider": slider}
+            tmp_labels = dict(labels)
+            del tmp_labels[label]
+            main_json = {"featured": items, "categories": tmp_labels, "slider": slider}
             save_json(main_json, os.path.join(OUT_DIR, "main.json"))
         else:
             save_json(items, filename)
