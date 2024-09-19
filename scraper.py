@@ -95,7 +95,7 @@ def save_full(data, filename):
     try:
         out = {}
         items = []
-        custom_order = ["Emoji", "Color", "Stylish"]
+        custom_order = ["Emoji", "Color", "Stylish","Myanmar"]
 
         for category, item_list in data.items():
             new_list = []
