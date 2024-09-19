@@ -1,4 +1,6 @@
 import json
+import timeit
+
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -54,14 +56,20 @@ def collect_by_label(label):
             thumb_element = item.find("img", id="z_thumb")
             info_element = item.find("div", id="z_info")
             title_element = item.find(class_="post-title entry-title")
+            category_element = item.find_all(class_="z_labels")
 
-            if thumb_element and info_element and title_element:
+            if thumb_element and info_element and title_element and category_element:
                 try:
+                    # cat = [i.text.strip() for i in category_element]
+                    cat = label
+                    if label == "Featured":
+                        cat = next((i.text.strip() for i in category_element if i.text.strip() != label), label)
+
                     thumb = thumb_element.get("src")
                     info = json.loads(info_element.text)
                     title = title_element.text.strip()
 
-                    info.update({"n": title, "t": thumb, "c": label})
+                    info.update({"n": title, "t": thumb, "c": cat})
                     posts.append(info)
                 except json.JSONDecodeError:
                     print(f"[ERROR] Failed to parse JSON for post: {title_element.text.strip()}")
@@ -82,49 +90,58 @@ def save_json(data, filename):
     except Exception as e:
         print(f"[ERROR] Failed to save data to {filename}: {e}")
 
+
 def save_full(data, filename):
     try:
-        # Initialize an empty list to store the output
-        out = []
-        # Loop through each category in the JSON data
+        out = {}
+        items = []
+        custom_order = ["Emoji", "Color", "Stylish"]
+
         for category, item_list in data.items():
             new_list = []
-            # Loop through each item in the category
+
             for item in item_list:
-                # Extract the necessary fields, using alternate keys if needed
-                title = item.get('title') or item.get('n')
-                size = item.get('size') or item.get('s')
-                url = item.get('url') or item.get('u')
-                thumbnail = item.get('thumbnail') or item.get('t')
-                preview = item.get('preview') or item.get('p')
-                author_name = item.get('a')
-                author_url = item.get('a_l')
-                
-                # Create a new item with the required fields
-                new_item = {"n": title, "s": size, "u": url, "t": thumbnail}
-                
-                # Add optional fields if they exist
-                if preview:
+                new_item = {
+                    "n": item.get('title') or item.get('n'),
+                    "s": item.get('size') or item.get('s'),
+                    "u": item.get('url') or item.get('u'),
+                    "t": item.get('thumbnail') or item.get('t')
+                }
+
+                # Optionally add fields if they exist
+                if preview := item.get('preview') or item.get('p'):
                     new_item["p"] = preview
-                if author_name:
+                if author_name := item.get('a'):
                     new_item["a"] = author_name
-                if author_url:
+                if author_url := item.get('a_l'):
                     new_item["a_l"] = author_url
-                
-                # Add the new item to the list
+                if category in ['Slider', 'Featured'] and (cat := item.get('c') or item.get('cat')):
+                    new_item["c"] = cat
+
                 new_list.append(new_item)
-    
-            # Add the category and its items to the output
-            out.append({"name": category, "items": new_list})
+
+            if category.lower() in ['slider', 'featured']:
+                out[category.lower()] = new_list
+            else:
+                items.append({"name": category, "items": new_list})
+
+        # Sort categories based on custom_order, placing others after
+        sorted_items = sorted(items, key=lambda x: (custom_order.index(x['name'])
+                                                    if x['name'] in custom_order
+                                                    else len(custom_order)))
+        out["categories"] = sorted_items
 
         with open(filename, 'w') as f:
             json.dump(out, f)
+
         print(f"[INFO] Successfully saved data to {filename}")
     except Exception as e:
         print(f"[ERROR] Failed to save data to {filename}: {e}")
 
+
 def get_file_path(name):
     return os.path.join(OUT_DIR, name)
+
 
 def main():
     print("[INFO] Starting scraping process.")
@@ -143,7 +160,6 @@ def main():
 
     for label in labels:
         items = collect_by_label(label)
-
         full[label] = items
         if label == "Featured":
             # Remove this lable from labels, we dont need to save in json
@@ -154,9 +170,14 @@ def main():
         else:
             save_json(items, get_file_path(f"{label}.json"))
 
-    save_full(full,get_file_path("full.json"))
+    save_full(full, get_file_path("full.json"))
 
     print("[INFO] Scraping process completed.")
 
+
 if __name__ == '__main__':
+    start = timeit.default_timer()
     main()
+    end = timeit.default_timer()
+
+    print(f"Done in {end - start:.2f} seconds")
