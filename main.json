@@ -1,6 +1,24 @@
 {
   "featured": [
     {
+      "s": "96.18 KB",
+      "u": "/Fonts/Language/Myanmar/2024/AkkhayarBrush-Regular.ttf",
+      "a": "The Akkhayar",
+      "a_l": "https://www.facebook.com/theakkhayar",
+      "n": "AkkhayarBrush-Regular",
+      "t": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhllrcfaUaDx_YK0fSbUXSw-Ux4LlBzdvGEPxzHluCw7TYSpLSKLcqXhtqbFAOBtytPUJElS1_H7FNJO6yAYyjQrwUW51SarORUJkjlYWvLFoptYAzCcYl0NOLGAQQBiY1O31O_t_-vjOICjUckb9IBuqbMQM-uHM7BW1Kfu3Zwj0MQmrTmrfwOzCHwQfYJ/s1600/x6afKNO.png",
+      "c": "Myanmar"
+    },
+    {
+      "s": "127.71 KB",
+      "u": "/Fonts/Language/Myanmar/2024/SM10_Mingalar-Regular.ttf",
+      "a": "Sai Moon's Design",
+      "a_l": "https://www.facebook.com/share/p/15SmcDwinP/",
+      "n": "SM10_Mingalar",
+      "t": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipMPhDLqcIv9qEKy-Dfk-nJ_m5OZSPkQnKqYyKDLK7HSNQfp0_Euqhek_rnTC7x8YHofzBICeTIWHlRRRNXNDFpLkJCnduwuUXt85Hhxa-i1aOlK30xtGrxSASQZR2yP80fmMqKqq7kkvMsCA91l9l-PvrKgsa_DnsbKfqNRHm-XVfjDNOVsLB6VkvunEk/s1600/ljYk1ot.png",
+      "c": "Myanmar"
+    },
+    {
       "s": "38.8 MB",
       "u": "/Fonts/Emoji/2024/unofficial_iOS18_S.ttf",
       "a": "RickyBush_",
@@ -46,15 +64,6 @@
       "c": "Myanmar"
     },
     {
-      "s": "116.73 KB",
-      "u": "/Fonts/Language/Myanmar/2024/SM09_BeeZee-Regular.ttf",
-      "a": "Sai Moon's Design",
-      "a_l": "https://www.facebook.com/saimoon.designblog",
-      "n": "SM09_BeeZee-Regular",
-      "t": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfw2BApwQrGMRiawSFcMgpjsgBggCDDRjJao9L6c6p216r1KT6FxfMCjtr1b7Ywx0n3gw3Eh68uv14G-LZwUcuFRnr8vFI1FKGsO9WUnumpGmfcdGUQ-FSBB8v_wtQ-RdNXyWmX1WruZKdelQZWQEZNhpU_bie5FPf1zVyjNryU6_EdTtpLhYEEVmpSKHo/s1600/nbRFCkg.png",
-      "c": "Myanmar"
-    },
-    {
       "s": "33.67 MB",
       "u": "/Fonts/Emoji/2024/FluentUI3D_U15.1.ttf",
       "a": "MFFM Emoji",
@@ -71,15 +80,6 @@
       "n": "Twemoji-v15.0.3",
       "t": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBHoTOSByqGz_oCFBDESPsjCJ_iKv1u_Hoz443TcT0V1waCtQTaASIutc7CE4RzoAKqOJG7sOwQ-aF-L6nspeKcmzYdirFrANFIs7UQtdjfu0SlE9JuEBRj5-jYJpX6FLPop84JdiesxRHHjpKtx44J6nM71RTKa9B27xuDCWPXY3UUCy4WwDE_cyJQjXq/s1600/HimLYnv.png",
       "c": "Emoji"
-    },
-    {
-      "s": "167.1 KB",
-      "u": "/Fonts/Language/Myanmar/Unicode/2023/Burmese-Handwriting.ttf",
-      "a": "Phoenix Digital Art",
-      "a_l": "https://www.facebook.com/PhoenixDigitalArti",
-      "n": "Burmese Handwriting",
-      "t": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYm-qpUhdhNcl91BXx8vTMPgFUFqBjJe7B-9eZ0t4ROZXpNjThJgesH5syy3KZbKljeqrC87IRv8Wy4j6e8jTM2ZdJV8cL231JxFd0wEOWbQhpf8KT_3_coA8G38a_KptvMZufCLnb1C1KT-bxYbPL-kMTW7iGCCs5mmLWxg9YEAU1MLZ1YBgYG8ZvDOJC/s1600/Burmese-Handwriting.png",
-      "c": "Myanmar"
     },
     {
       "a": "ZINBO",
@@ -185,7 +185,7 @@
     "Korean": "1",
     "Kurdish": "55",
     "Lao": "50",
-    "Myanmar": "186",
+    "Myanmar": "188",
     "PaO": "4",
     "Russia": "22",
     "Shan": "22",
@@ -198,6 +198,26 @@
     "Vietnamese": "48"
   },
   "slider": [
+    {
+      "a_l": "https://www.facebook.com/theakkhayar",
+      "a": "The Akkhayar",
+      "preview": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicWTasmwVCnMmfuEwsLByrSS3mh_C84phSQ1QEG9BczKLXazRa2LxL6v6LuwEgO2GCjnZlcdDvqTVie-KicuSA8bSJA8nzHAsg31B860uVZHWz4gK3FnTDaCKFuVMPpnSUY2ra_2hufVeJWGjRKlDZMZJ8jUVs_lVz5XWlN2pGfZTgtqXWItgh6iYVAx0A/s16000/AkkhayarBrush-Regular.jpg",
+      "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhllrcfaUaDx_YK0fSbUXSw-Ux4LlBzdvGEPxzHluCw7TYSpLSKLcqXhtqbFAOBtytPUJElS1_H7FNJO6yAYyjQrwUW51SarORUJkjlYWvLFoptYAzCcYl0NOLGAQQBiY1O31O_t_-vjOICjUckb9IBuqbMQM-uHM7BW1Kfu3Zwj0MQmrTmrfwOzCHwQfYJ/s1600/x6afKNO.png",
+      "size": "96.18 KB",
+      "cat": "Myanmar",
+      "title": "AkkhayarBrush-Regular",
+      "url": "/Fonts/Language/Myanmar/2024/AkkhayarBrush-Regular.ttf"
+    },
+    {
+      "a_l": "https://www.facebook.com/share/p/19jwKznZdT/",
+      "a": "Sai Moon's Design",
+      "preview": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ3-IhkfMzFkBxBcCMjcubpnTXIpq7xXk072EhyphenhyphenprdIjQwSVYjhAcYdP8u9Hx08Ob-h0jfUG9RQVG2pT8oxwAkxWQmy1P623OZrWcmm9mQxxv5FzMi0Z88GL8s5tJfB_9CqiEC1hR8dFTUbghzBstL_KEyDp7GiIe_QFBvSjtDsI-k88JWfXpl5v5re_t4/s16000/SM10_Mingalar-Regular_02.jpg",
+      "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipMPhDLqcIv9qEKy-Dfk-nJ_m5OZSPkQnKqYyKDLK7HSNQfp0_Euqhek_rnTC7x8YHofzBICeTIWHlRRRNXNDFpLkJCnduwuUXt85Hhxa-i1aOlK30xtGrxSASQZR2yP80fmMqKqq7kkvMsCA91l9l-PvrKgsa_DnsbKfqNRHm-XVfjDNOVsLB6VkvunEk/s1600/ljYk1ot.png",
+      "size": "127.71 KB",
+      "cat": "Myanmar",
+      "title": "SM10_Mingalar",
+      "url": "/Fonts/Language/Myanmar/2024/SM10_Mingalar-Regular.ttf"
+    },
     {
       "a_l": "https://t.me/EmojiReplacer",
       "a": "RickyBush_",
@@ -217,16 +237,6 @@
       "cat": "Emoji",
       "title": "Joypixel_v9.0",
       "url": "/Fonts/Emoji/2024/Joypixel_v9.0(MFFMEmoji).ttf"
-    },
-    {
-      "a_l": "https://www.facebook.com/saimoon.designblog",
-      "a": "Sai Moon's Design",
-      "preview": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw1-vprWsfHXHh7IxnGLdzaExe9tiMRdPJaf6UTviLSyIBU1CWIu33ROm9QvmOh6m9qrVfWydJedZetzOSgGjTKm12inigraTKMbZ60Etrtmm3z8WInY7GIwxxOx3PRMw1JlJKKvKjPEjRBcErxIro8FHl0sh542OS2kuwv9eYRXiYwx2xR70nqWR6ju6V/s16000/435460553_901548751977907_4879463453437472594_n.jpg",
-      "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjejcawjMVSh_xOqbv1EmUJ-0ZYJ0VDXxrnvnVsCl1QqG5A54HSmjzWwGIEsy9bfI5iQN5gtbT2GtqXeObXh3h-iwjaSoI7cpUA9ZqCSXfoBtEt-cJ-8BFe0YACXpLiYdvfRIqkBhtxm0XqzNuBaY2TNbLJjvQ90OvYcVfmO117cs_C8cYtqD7AEiIo3P8f/s1600/NBKTwvL.png",
-      "size": "75.93 KB",
-      "cat": "Myanmar",
-      "title": "SM08_AntiVirus-Regular",
-      "url": "/Fonts/Language/Myanmar/2024/SM08_AntiVirus-Regular.ttf"
     },
     {
       "a_l": "https://t.me/mffmemojis",
