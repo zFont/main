@@ -1,5 +1,23 @@
 [
   {
+    "s": "18.51 MB",
+    "u": "/Fonts/Emoji/2024/SamsungOneUI7Beta_Unicode16.ttf",
+    "a": "MFFM Emoji",
+    "a_l": "https://t.me/mffmemojis",
+    "n": "OneUI 7 Beta (Unicode 16)",
+    "t": "https://cdn.jsdelivr.net/gh/zFont/thumbnail@main/yGeWJjQ.png",
+    "c": "Emoji"
+  },
+  {
+    "s": "10.15 MB",
+    "u": "/Fonts/Emoji/2024/NotoColorEmojiu16PNG_v041024[MFFMEmoji].ttf",
+    "a": "MFFM Emoji",
+    "a_l": "https://t.me/mffmemojis/110",
+    "n": "Noto Color Emoji [Unicode 16]",
+    "t": "https://cdn.jsdelivr.net/gh/zFont/thumbnail@main/YyO38Bs.png",
+    "c": "Emoji"
+  },
+  {
     "s": "38.8 MB",
     "u": "/Fonts/Emoji/2024/unofficial_iOS18_S.ttf",
     "a": "RickyBush_",
